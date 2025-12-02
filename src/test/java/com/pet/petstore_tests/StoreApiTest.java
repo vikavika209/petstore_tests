@@ -37,7 +37,7 @@ public class StoreApiTest extends BaseApiTest {
                 }
                 """.formatted(orderId, petId, OffsetDateTime.now().toString());
 
-       given()
+        given()
                 .body(orderBody)
                 .when()
                 .post("/store/order")
@@ -83,7 +83,7 @@ public class StoreApiTest extends BaseApiTest {
     @Test
     @Order(2)
     @DisplayName("Получение заказа (POST /store/order)")
-        void getOrderById_Success () {
+    void getOrderById_Success() {
 
         given()
                 .pathParam("orderId", orderId)

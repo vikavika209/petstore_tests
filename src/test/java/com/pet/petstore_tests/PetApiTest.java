@@ -60,7 +60,7 @@ public class PetApiTest extends BaseApiTest {
     }
 
     @Test
-    @DisplayName("Создание питомца (POST /pet)")
+    @DisplayName("Создание питомца (POST /pet) - Invalid Input")
     void createPet_invalid_input() {
 
         //Согласно документации, для некорректного ввода возможен 405,
